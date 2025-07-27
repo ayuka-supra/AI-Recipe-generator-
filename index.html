@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form action="">
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Search recipe for ..."
@@ -24,12 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">
-          ingredients:
-
-          <br />
-          instructions:
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
